@@ -104,6 +104,10 @@ main{
     background-color: #ccc;
 }
 
+.tabela tbody td button{
+    margin-left: 2%;
+} 
+
 .pop{
     position: absolute;
     top: 0;

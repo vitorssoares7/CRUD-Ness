@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 const service = require('../service/service');
 
+router.get('/', async function(req,res){
+    res.render('index',{});
+});
+
 router.get('/jogadores', async function(req,res){
     const jogadores = await service.getJogadores();
     res.json(jogadores);
